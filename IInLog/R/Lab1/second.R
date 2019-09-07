@@ -1,18 +1,21 @@
 #1.2
-# a.
+# Пункт a.
 mySeq <- seq(5, -11, -0.3)
+mySeq
 
-# b.
+# Пункт b.
 mySeq <- rev(mySeq)
+mySeq
 
-# c.
+# Пункт c.
 myRep <- rep(c(-1, 3, -5, 7, -9), 2, each=10)
 sort(myRep, TRUE)
 
-# d.
+# Пункт d.
 d <- c(seq(6, 12), 
        rep(5.3, 3), -3, 
        seq(102, length(myRep),length.out=9))
+d
 
-# e.
+# Пункт e.
 length(d)
