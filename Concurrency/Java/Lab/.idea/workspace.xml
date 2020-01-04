@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eeb76f2-27ab-451e-88cb-1dac5c59fa57" name="Default Changelist" comment="" />
+    <list default="true" id="1eeb76f2-27ab-451e-88cb-1dac5c59fa57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Lab7/EquationSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab7/SubtractionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab/Lab6/MyNewThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab/Lab6/MyNewThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab/Lab6/StateInfoThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab/Lab6/StateInfoThread.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gwgw/all/Concurrency/Java/Lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -57,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Deadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab5.Deadlock.Deadlock" />
       <module name="Lab" />
@@ -97,6 +104,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab7.Main" />
+      <module name="Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab4.Demo.PC" />
       <module name="Lab" />
@@ -110,26 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab3.Demo.Sync" />
-      <module name="Lab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab3.Demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Demo (1)" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Deadlock" />
         <item itemvalue="Application.PC" />
-        <item itemvalue="Application.Sync" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +154,8 @@
       <workItem from="1572434959216" duration="9037000" />
       <workItem from="1572530958995" duration="9530000" />
       <workItem from="1572541333583" duration="28000" />
+      <workItem from="1578062009588" duration="8300000" />
+      <workItem from="1578115792284" duration="12657000" />
     </task>
     <servers />
   </component>
