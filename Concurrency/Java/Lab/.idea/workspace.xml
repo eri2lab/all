@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb76f2-27ab-451e-88cb-1dac5c59fa57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lab8/Bound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab8/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab8/PSRS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab8/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/AlreadyUsedWordsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/Data/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/Data/words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/Data/wordsreduced.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/DemoOutOfWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/LetterMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/LetterPartFiller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab9/OutOfWordsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,11 +63,12 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\LabRepo\Concurrency\Java\Lab\src" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Lab5.Deadlock" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LabRepo\Concurrency\Java\Lab\src\Lab9\Data" />
+      <recent name="C:\LabRepo\Concurrency\Java\Lab\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,20 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Deadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab5.Deadlock.Deadlock" />
-      <module name="Lab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab5.Deadlock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.DemoOutOfWords">
     <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab6.Demo" />
       <module name="Lab" />
@@ -104,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab5.SuspendResume.Demo" />
+    <configuration name="DemoOutOfWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab9.DemoOutOfWords" />
       <module name="Lab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lab5.SuspendResume.*" />
+          <option name="PATTERN" value="Lab9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,6 +116,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Lab8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab9.Main" />
+      <module name="Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoOutOfWords" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Demo (1)" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.Deadlock" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +178,7 @@
       <workItem from="1578137800688" duration="3494000" />
       <workItem from="1578203083279" duration="19137000" />
       <workItem from="1578224563583" duration="679000" />
+      <workItem from="1578237555339" duration="10141000" />
     </task>
     <servers />
   </component>
