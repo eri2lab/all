@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb76f2-27ab-451e-88cb-1dac5c59fa57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lab7/EquationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab7/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab7/SubtractionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab8/Bound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab8/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab8/PSRS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab8/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab/Lab6/MyNewThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab/Lab6/MyNewThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab/Lab6/StateInfoThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab/Lab6/StateInfoThread.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +16,20 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="219" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,11 +58,11 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Lab5.Deadlock" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\LabRepo\Concurrency\Java\Lab\src" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Lab5.Deadlock" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Deadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab5.Deadlock.Deadlock" />
       <module name="Lab" />
@@ -104,6 +117,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab8.Main" />
+      <module name="Lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab7.Main" />
       <module name="Lab" />
@@ -117,26 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab4.Demo.PC" />
-      <module name="Lab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab4.Demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Demo (1)" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Deadlock" />
-        <item itemvalue="Application.PC" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +169,9 @@
       <workItem from="1572541333583" duration="28000" />
       <workItem from="1578062009588" duration="8300000" />
       <workItem from="1578115792284" duration="12657000" />
+      <workItem from="1578137800688" duration="3494000" />
+      <workItem from="1578203083279" duration="19137000" />
+      <workItem from="1578224563583" duration="679000" />
     </task>
     <servers />
   </component>
@@ -178,6 +194,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lab$ThreadDemo.ic" NAME="ThreadDemo Coverage Results" MODIFIED="1572255248504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Lab1.Demo.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lab$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1578211956187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Lab8.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Lab$Sync.ic" NAME="Sync Coverage Results" MODIFIED="1572266917536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Lab3.Demo.*</FILTER>
