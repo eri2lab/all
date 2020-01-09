@@ -57,7 +57,7 @@ public class Main {
         System.out.printf("Время выполнения быстрой сортировки: %d\n", msQS);
 
         System.out.println("Сортировка выполнена корректно для обоих алгоритмов: "
-                + (isOrdered(PSRSResult) && isOrdered(unsortedClone)) + "\n\n\n\n");
+                + (isOrdered(PSRSResult) && isOrdered(unsortedClone)) + "\n");
     }
 
     /**
