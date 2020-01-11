@@ -36,26 +36,15 @@ solve_infinity_iter <- function(p, r) {
   return(totalIncome)
 }
 
-
-get_strategies_combinations <- function(states_count, 
-                                        strategies_count) {
-  l <- rep(list(1:strategies_count), states_count)
-  return(expand.grid(l))
-}
-
-
-
-make_matrix_from_combination <- function(combination, matrices) {
-  len = nrow(matrices[[1]])
-  container = vector("list", len)
-  for (i in 1:len) {
-    strategy = combination[[i]]
-    container[[i]] <- matrices[[strategy]][i,]
-  }
-  return(do.call(rbind, container))
-}
-
-get_combinations <- function (probabilities, incomes) {
+# Сформировать все возможные стратегии.
+# Для каждой стратегии формируется
+# матрица переходов и матрица доходов.
+#
+# @param [list] probabilities Список матриц переходов.
+# @param [list] incomes Соответствующий список матриц доходов.
+#
+# @return [Strategy] Все возможные стратегии.
+get_strategies <- function (probabilities, incomes) {
   strategies_count = length(probabilities)
   states_count = ncol(probabilities[[1]])
   combinations = get_strategies_combinations(states_count, strategies_count)
@@ -75,6 +64,71 @@ get_combinations <- function (probabilities, incomes) {
   return(container)
 }
 
+# Сформировать таблицу комбинаций стратегий в табличном виде
+# в соответствии с количеством состояний.
+#
+# @param [numeric] states_count Число состояний.
+# @param [numeric] strategies_count Число стратегий.
+#
+# @return [data.frame] Таблица комбинаций стратегий.
+get_strategies_combinations <- function(states_count, 
+                                        strategies_count) {
+  l <- rep(list(1:strategies_count), states_count)
+  return(expand.grid(l))
+}
+
+
+# Сформировать матрицу переходов или расходов
+# для указанной стратегии.
+#
+# @param [data.frame] combination Комбинация (стратегия).
+# @param [list] matrices Список матриц переходов 
+#                        или матриц расходов.
+#
+# @return [matrix] Матрица для заданной стратегии.
+make_matrix_from_combination <- function(combination, matrices) {
+  len = nrow(matrices[[1]])
+  container = vector("list", len)
+  for (i in 1:len) {
+    strategy = combination[[i]]
+    container[[i]] <- matrices[[strategy]][i,]
+  }
+  return(do.call(rbind, container))
+}
+
+# Найти ожидаемый годовой доход для заданных стратегий,
+# максимальный ожидаемый годовой доход и вывести результат.
+#
+# @param [list] strategies Список стратегий.
+#
+# @return [matrix] Матрица для заданной стратегии.
+solve_strategies <- function(strategies) {
+  max_income = 0
+  for (strategy in strategies) {
+    probability = strategy@probability_matrix
+    income = strategy@income_matrix
+    strategy_combination = strategy@strategy
+    
+    solution = solve_infinity_iter(probability, income)
+    
+    if (solution > max_income) {
+      max_income = solution
+      most_benefit_strategy = strategy
+    }
+    
+    #Вывод данных в консоль.
+    cat(paste("Стратегия: ", toString(strategy_combination), "\n"))
+    cat("Входные данные. Матрица переходных вероятностей:\n")
+    print(probability)
+    cat("Входные данные. Матрица доходов:\n")
+    print(income)
+    cat(paste("Итоговый ожидаемый годовой доход: ", toString(solution), "\n\n\n\n\n"))
+  }
+  
+  cat(paste("Общее число комбинаций: ", toString(length(strategies)), "\n"))
+  cat(paste("Наиболее прибыльная стратегия: ", toString(most_benefit_strategy@strategy), "\n"))
+  cat(paste("Наибольший ожидаемый годовой доход", toString(max_income), "\n"))
+}
 
 radio_probability = matrix(c(0.4, 0.5, 0.1,
                              0.1, 0.7, 0.2,
@@ -105,19 +159,8 @@ newspaper_income = matrix(c(400, 530, 710,
 
 probabilities = list(radio_probability, television_probability, newspaper_probability)
 incomes = list(radio_income, television_income, newspaper_income)
-combinations = get_combinations(probabilities, incomes)
+strategies = get_strategies(probabilities, incomes)
+solve_strategies(strategies)
 
-for (combination in combinations) {
-  probability = combination@probability_matrix
-  income = combination@income_matrix
-  strategy = combination@strategy
-  
-  solution = solve_infinity_iter(probability, income)
-  #Вывод данных в консоль.
-  cat(paste("Стратегия: ", toString(strategy), "\n"))
-  cat("Входные данные. Матрица переходных вероятностей:\n")
-  print(probability)
-  cat("Входные данные. Матрица доходов:\n")
-  print(income)
-  cat(paste("Итоговый ожидаемый годовой доход: ", toString(solution), "\n\n\n\n\n"))
-}
+
+
