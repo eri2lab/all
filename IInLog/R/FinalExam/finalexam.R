@@ -140,27 +140,24 @@ radio_income = matrix(c(400, 520, 600,
 
 
 television_probability = matrix(c(0.7, 0.2, 0.1,
-                             0.3, 0.6, 0.1,
-                             0.1, 0.7, 0.2), nrow=3, byrow=TRUE)
+                                  0.3, 0.6, 0.1,
+                                  0.1, 0.7, 0.2), nrow=3, byrow=TRUE)
 
 television_income = matrix(c(1000, 1300, 1600,
-                        800, 1000, 1700,
-                        600, 700, 1100), nrow=3, byrow=TRUE)
+                             800, 1000, 1700,
+                             600, 700, 1100), nrow=3, byrow=TRUE)
 
 
 newspaper_probability = matrix(c(0.2, 0.5, 0.3,
-                             0, 0.7, 0.3,
-                             0, 0.2, 0.8), nrow=3, byrow=TRUE)
+                                 0, 0.7, 0.3,
+                                 0, 0.2, 0.8), nrow=3, byrow=TRUE)
 
 newspaper_income = matrix(c(400, 530, 710,
-                        350, 450, 800,
-                        250, 400, 650), nrow=3, byrow=TRUE)
+                            350, 450, 800,
+                            250, 400, 650), nrow=3, byrow=TRUE)
 
 
 probabilities = list(radio_probability, television_probability, newspaper_probability)
 incomes = list(radio_income, television_income, newspaper_income)
 strategies = get_strategies(probabilities, incomes)
 solve_strategies(strategies)
-
-
-
